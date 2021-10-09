@@ -1,0 +1,12 @@
+.footer{
+    margin-bottom: 2em;
+    padding: 1em;
+    border: 3px black;
+    box-sizing: border-box;
+    width: 90%;
+    background-color:#202020;
+    border-radius: 1em;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}

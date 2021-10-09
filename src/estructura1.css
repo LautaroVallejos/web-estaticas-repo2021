@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif, bolder;
+}
+
+body{
+    background-color: #404040;
+
+}
+
+.header {
+    background-color: #101010;
+    display: flex;
+    justify-content:center;
+    box-shadow: 2px 2px 7px;
+}
+
+a{
+    box-sizing: auto;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    text-transform: none;
+    color: #fff;
+    justify-content:center;
+}
+
+.py-icon{
+    width: 3em;
+}
+
+#python{
+    margin-left: .8em;
+    font-size: 1.7em;
+}
+
+.navbar{
+    padding: .7em;
+    background-color: #212121;
+    box-shadow: 1px 3px 7px;
+}
+
+.links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.links > a{
+    margin: .3em;
+    text-decoration: none;
+    text-transform: none;    
+}
+
+.container{
+    padding: 1em
+}
+
+.container:hover{
+    background-color: #303030;
+    border-radius: .5em;
+    padding: 3em auto;
+}
+
+.principal{
+    margin: 1em;
+    padding: 1em;
+}
+
+h1{
+    font-size: 3.5em;
+    margin: .6em;
+    text-align: center;
+    color: white;
+}
+
+h2{
+    font-size: 2em;
+    text-align: center;
+    color: white;
+}
+
+h3{
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+}
+
+.main-photo{
+    width: 90%;
+    border-radius: .5em;
+    box-shadow: 1px 3px 7px;
+    float: center;
+    margin: 1.5em;
+    margin-right: auto
+    
+}
+
+.content{
+    margin: 2em;
+}
+
+p{
+    margin: 1em;
+    font-size: 1.2em;
+    text-indent: 1em;
+    color: white;
+}
+
+
+/*
+Código pasado al footer.css
+
+.footer{
+    margin-bottom: 2em;
+    padding: 1em;
+    border: 3px black;
+    box-sizing: border-box;
+    width: 90%;
+    background-color:#202020;
+    border-radius: 1em;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}*/
+
+.items{
+    padding: .4em;
+    font-size: 1.2em;
+    margin-left: 2em;
+    color: white;
+}
+
+/*
+    Codigo iniciado para el trabajo 5 de galerias
+*/
+
+h4{
+    color: white;
+    font-size: 1.2em;
+    text-align: Center;
+}
+
+.galery{
+    margin: 2em;
+    padding: 2em;
+}
+
+.galery > .card{
+    background: #34317D;
+    width: 220px;
+    height: auto;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 1em;
+    display: inline-block;
+}   
+
+
+.galery-logos{
+    width: 200px;
+    height: 200px;
+    display: block;
+    border-radius: 100%;
+    padding: .3em;
+}
