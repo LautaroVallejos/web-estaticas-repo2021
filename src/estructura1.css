@@ -45,6 +45,7 @@ a{
 .links{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-around;
 }
 
@@ -52,10 +53,14 @@ a{
     margin: .3em;
     text-decoration: none;
     text-transform: none;    
+    font-family: 'Roboto', sans-serif, bolder;
+    font-size: 27.2px;
 }
 
 .container{
-    padding: 1em
+    padding: 1em;
+    font-family: 'Roboto', sans-serif, bolder;
+    font-size: 27.2px;
 }
 
 .container:hover{
@@ -146,6 +151,7 @@ h4{
 .galery{
     margin: 2em;
     padding: 2em;
+    
 }
 
 .galery > .card{
@@ -165,4 +171,76 @@ h4{
     display: block;
     border-radius: 100%;
     padding: .3em;
+}
+
+.menu-icon{
+    width: 50px;
+    height: auto;
+}
+
+#btn-menu{
+    /* display: None; */
+}
+
+#label-button{
+    padding: .2em;
+}
+
+#label-button:hover{
+    cursor: pointer;
+
+}
+
+@media (max-width: 768px) {
+    #label-button{
+        display: block;
+    }
+
+    
+    .links{
+        flex-direction: column;
+        padding: 1em;
+        width: 100%;
+    }
+    
+    .links > a {
+        border-bottom: 1px solid #fff;
+        padding: 0.5em;
+        color: #000;
+        font-size: 18px;
+    }
+    
+    .container > a { 
+        border-bottom: 1px solid #fff;
+        padding: 0.5em;
+        color: #000;
+        font-family: 'Roboto', sans-serif, bolder;
+        font-size: 27.2px;
+    }
+    
+    .container:hover{
+        background-color: #5C033B;
+        border-radius: .5em;
+        padding: 3em auto;
+        box-shadow: 2px 2px 3px black;
+    }
+    
+    .container-menu{
+        padding: .5em;
+        background-color: #202020;
+    }
+    
+    .navbar {
+        position: absolute;
+        width: 70%;
+        background-color: #303030;
+        /* margin-left: -70%; */
+    }
+
+    #btn-menu:checked ~ .navbar {
+        position: relative;
+        background-color: red;
+        margin-left: 0%;
+    }
+
 }
