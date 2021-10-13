@@ -130,6 +130,9 @@ Código pasado al footer.css
     text-align: center;
     color: white;
 }*/
+.container-menu{
+    display: None;
+}
 
 .items{
     padding: .4em;
@@ -151,7 +154,6 @@ h4{
 .galery{
     margin: 2em;
     padding: 2em;
-    
 }
 
 .galery > .card{
@@ -179,7 +181,12 @@ h4{
 }
 
 #btn-menu{
-    /* display: None; */
+    display: None;
+    cursor: pointer;
+}
+
+.menu-icon{
+    cursor: pointer;
 }
 
 #label-button{
@@ -191,7 +198,7 @@ h4{
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 872px) {
     #label-button{
         display: block;
     }
@@ -223,24 +230,25 @@ h4{
         border-radius: .5em;
         padding: 3em auto;
         box-shadow: 2px 2px 3px black;
+        cursor: pointer;
     }
     
     .container-menu{
         padding: .5em;
         background-color: #202020;
+        display: block;
     }
     
     .navbar {
         position: absolute;
         width: 70%;
         background-color: #303030;
-        /* margin-left: -70%; */
+        margin-left: -70%;
+        transition: all 0.5s;
     }
 
-    #btn-menu:checked ~ .navbar {
-        position: relative;
-        background-color: red;
-        margin-left: 0%;
+    #btn-menu:checked~.navbar {
+        margin: 0;
     }
 
 }
