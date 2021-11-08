@@ -154,16 +154,17 @@ h4{
 .galery{
     margin: 2em;
     padding: 2em;
+    margin-left: unset;
 }
 
-.galery > .card{
+#container-g > .card{
     background: #34317D;
     width: 220px;
     height: auto;
     margin: 1em;
     padding: 1em;
     border-radius: 1em;
-    display: inline-block;
+    display: inherit;
 }   
 
 
@@ -197,6 +198,15 @@ h4{
     cursor: pointer;
 
 }
+
+#container-g{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-auto-flow: row;
+    justify-items: center;
+}
+
 
 @media (max-width: 872px) {
     #label-button{
@@ -251,4 +261,25 @@ h4{
         margin: 0;
     }
 
+    #container-g{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-auto-flow: row;
+        justify-items: center;
+    }
+
+    .galery{
+        margin-left: unset;
+    }
+
+    .contact{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .contact > .img{
+        padding: 1em;
+    }
 }

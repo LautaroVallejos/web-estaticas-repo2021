@@ -9,4 +9,58 @@
     margin: 0 auto;
     text-align: center;
     color: white;
+    margin-bottom: 2em;
+    display: block;
+    float: center;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #808080;
+    margin: 1em;
+    padding: .3em;
+    border-radius: 1em;
+}
+
+.social-network{
+    display: flex;
+    justify-content: center;
+}
+
+.social > .img{
+    padding-right: 1.5em;
+
+}
+
+.social-network > .info{
+    display: inherit;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1em;
+}
+
+.social{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 5em;
+}
+
+@media (max-width: 872px) {
+
+    .social{
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: .4em;
+        background: #808080;
+        align-items: center;
+        border-radius: 1em;
+    }
+    
+    .social > .img{
+        padding: 0;
+    }
 }
