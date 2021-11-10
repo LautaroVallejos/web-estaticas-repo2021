@@ -48,6 +48,13 @@ header {
                border-radius: 1em;
                box-shadow: black 1px 1px 3px;
             }
+
+            .nav-container:hover{
+                color: #fff;
+                opacity: .5;
+                transition: 0.3s;
+            }
+
             .nav-link{
                 font-family: 'Mochiy Pop One', sans-serif;
                 font-size: 1.5em;
@@ -162,9 +169,6 @@ header {
             margin: 1em;
         }
 
-        .ads > img {
-            
-        }
 
 footer {
     background-color: #3F3351;
@@ -201,4 +205,23 @@ footer {
             align-items: center;
         }
 
-@media (max-width: 872px)
+@media (max-width: 830px){
+
+    .aside{
+        display: None;
+    }
+
+    .social{
+        display: none;
+    }
+
+    .pie{
+        flex-direction: column;
+        margin-bottom: 1em;
+    }
+    
+    .item{
+        padding: .7em;
+    }
+
+}
